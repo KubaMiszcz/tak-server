@@ -37,6 +37,7 @@ The size blew up after `4.6` due to `900GB` of DTED which was added to WebTAK.
 | `takserver-docker-4.7-RELEASE-18.zip` | `759410768` | `44b6fa8d7795b56feda08ea7ab793a3e` | `cd56406d3539030ab9b9b3fbae08b56b352b9b53` |
 | `takserver-docker-4.7-RELEASE-20.zip` | `759389907` | `1cb0208c62d4551f1c3185d00a5fd8bf` | `f427ae3e860fddb8907047f157ada5764334c48d` |
 | `takserver-docker-4.8-RELEASE-31.zip` | `772606000` | `c07f01d74960287bfc7dc08ecd6cbc3a` | `387ea4f593763d3adcfda5128a89dda4fd82e937` |
+| `takserver-docker-4.10-RELEASE-50.zip`| `528MB`     | `5068d5fd70cbc9ecf53f2259dc9383f7` | `177ed55a66ce8126424937dd3bc7375feb12d3eb` |
 
 ## Requirements
 
@@ -44,8 +45,12 @@ The size blew up after `4.6` due to `900GB` of DTED which was added to WebTAK.
 - Docker with `compose` (https://docs.docker.com/engine/install/ubuntu/ or https://docs.docker.com/engine/install/debian/)
 - A TAK server release
 - 2GB memory
+- 6GB Storage Space for Debian11
 - Network connection
 - `unzip` and `netstat` utilities
+- Java JDK and JRE (your Debian version: `cat /etc/issue`):
+  - for Debian 10 Java11 (55): `sudo apt install openjdk-11-jre-headless openjdk-11-jdk -y`
+  - for Debian 11 Java17 (61): `sudo apt install openjdk-17-jre-headless openjdk-17-jdk -y`
 
 ## Setup Video 
 
